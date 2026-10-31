@@ -176,6 +176,7 @@ footer{{background:var(--night);color:#7d8ca5;padding:30px 0;font-size:14px;bord
     <nav class="nav" aria-label="Main">
       <a class="keep" href="/blog/"{blogcur}>Blog</a>
       <a class="keep ev" href="/early-vote/">Vote tracker</a>
+      <a href="/odds/">Betting odds</a>
       <a href="/vote/">Where to vote</a>
       <a href="/#follow">Follow</a>
     </nav>
@@ -268,7 +269,7 @@ def main():
     # sitemap + robots for the whole site
     today = datetime.date.today().isoformat()
     newest = posts[0]["date"] if posts else today
-    urls = [("/", today, "daily", "1.0"), ("/early-vote/", today, "daily", "0.9"), ("/vote/", today, "weekly", "0.8"), ("/abbott-impact/", today, "weekly", "0.8"),
+    urls = [("/", today, "daily", "1.0"), ("/early-vote/", today, "daily", "0.9"), ("/vote/", today, "weekly", "0.8"), ("/abbott-impact/", today, "weekly", "0.8"), ("/odds/", today, "daily", "0.8"),
             ("/blog/", newest, "daily", "0.8")] + [(p["url"], p["date"], "monthly", "0.7") for p in posts]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u, d, f, pr in urls:

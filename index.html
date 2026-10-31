@@ -67,12 +67,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset
 .nav a.gotv-link{background:#b8362e;color:#fff6e3;padding:4px 12px;border-radius:999px;margin:-4px 0}
 .nav a.gotv-link:hover{background:#d2433a;color:#fff}
 .nav a{white-space:nowrap}
+@media (max-width:1240px){.nav{gap:14px;font-size:15.5px}}
 .nav a.ev-link{background:#f5a21f;color:#0c1e38;padding:4px 12px;border-radius:999px;margin:-4px 0;text-transform:capitalize}
 .nav .ev-short{display:none}
 .nav .gv-star{color:#f5a21f}
 .nav a.ev-link:hover{background:#ffb84a;color:#0c1e38}
 @media (max-width:480px){.mark{font-size:16px;line-height:1.15;gap:8px}.mark img{width:38px;height:38px}.nav .ev-long{display:none}.nav .ev-short{display:inline}.nav{gap:8px}.nav a.ev-link,.nav a.gotv-link{padding:4px 10px}}
-@media (max-width:700px){.nav a:not(.keep){display:none}.nav{gap:14px}}
+@media (max-width:1030px){.nav a:not(.keep){display:none}.nav{gap:14px}}
 @media (max-width:480px){.nav a.keep:not(.gotv-link):not(.ev-link){display:none}}
 @media (max-width:400px){.mark{font-size:14px;gap:6px}.mark img{width:34px;height:34px}.nav{gap:6px}.nav a.ev-link,.nav a.gotv-link{padding:4px 8px;font-size:15px}}
 
@@ -367,6 +368,7 @@ footer small{color:#7d8ca5;font-size:14px}
       <a class="keep gv-nav" href="/vote/"><span class="gv-star" aria-hidden="true">★</span> Get out the vote</a>
       <a class="keep ev-link" href="/early-vote/"><span class="ev-long">Early vote tracker</span><span class="ev-short">Vote tracker</span></a>
       <a class="keep gotv-link" href="/early-vote/#volunteer"><span class="ev-long">Start texting for a win</span><span class="ev-short">Text to win</span></a>
+      <a href="/odds/">Odds</a>
       <a href="#abbott-impact">Abbott Impact</a>
       <a href="/blog/">Blog</a>
       <a href="#newsletter">Newsletter</a>
@@ -546,7 +548,7 @@ footer small{color:#7d8ca5;font-size:14px}
           <li><span>Change since the previous pull</span><span id="ev-chg">0.1 pts toward Republicans</span></li>
         </ul>
         <p class="caveat">This counts who returned a ballot, by registration. It doesn't tell you how anyone voted. Early vote leans Democratic every cycle because mail voting does; the tracker compares it to the 2022 finish line.</p>
-        <div class="ctas"><a class="btn primary" href="/early-vote/">See every state</a><a class="btn fb" href="https://www.facebook.com/Commonsensegay/" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4.2h-3c-2.8 0-4.4 1.8-4.4 4.6V11H7v3.7h2.6V22h3.8v-7.3h3l.5-3.7h-3.5V9.1c0-.7.3-1.1 1-1.1z"/></svg>Get the daily read on Facebook</a></div>
+        <div class="ctas"><a class="btn primary" href="/early-vote/">See every state</a><a class="btn ghost" href="/odds/">Betting odds vs. the vote</a><a class="btn fb" href="https://www.facebook.com/Commonsensegay/" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4.2h-3c-2.8 0-4.4 1.8-4.4 4.6V11H7v3.7h2.6V22h3.8v-7.3h3l.5-3.7h-3.5V9.1c0-.7.3-1.1 1-1.1z"/></svg>Get the daily read on Facebook</a></div>
       </div>
       <div class="why">
         <h3>Why I built it</h3>
